@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arm-controls"
+version = "0.1.0"
+description = "6-DOF robotic arm motion-control stack"
+authors = [{name = "Mihir Madhaparia"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+serial = ["pyserial>=3.5"]
+can = ["python-can>=4.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
