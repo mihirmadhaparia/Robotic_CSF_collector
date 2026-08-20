@@ -1,5 +1,0 @@
-numpy>=1.24
-pyyaml>=6.0
-# optional hardware backends (install as needed):
-# pyserial>=3.5      # serial motor controllers
-# python-can>=4.0    # CAN bus drivers
